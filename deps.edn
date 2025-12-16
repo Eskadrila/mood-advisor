@@ -4,5 +4,11 @@
  :deps {}
 
  :aliases
- {:run {:main-opts ["-m" "mood-advisor.core"]}}
+ {:run
+  {:main-opts ["-m" "mood-advisor.core"]}
+
+  :test
+  {:extra-deps
+   {midje/midje {:mvn/version "1.10.9"}}
+   :extra-paths ["test"]}}
  }
